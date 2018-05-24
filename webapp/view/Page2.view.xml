@@ -1,0 +1,34 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.autoAifApp.controller.Page2" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="true" title="AUTO AIF - APP" showFooter="true" showNavButton="true" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="531px" top="158px">
+                        <layout:control>
+                            <RadioButtonGroup id="sap_m_Page_0-content-sap_m_RadioButtonGroup-1522170846947" columns="1" selectedIndex="0" valueState="None" width="247.99769592285156px" editable="true" enabled="true" textDirection="Inherit" select="_onRadioButtonGroupSelect">
+                                <buttons>
+                                    <RadioButton text="Idoc" editable="true" enabled="true" visible="true" width="489.98846435546875px" valueState="None" selected="false"/>
+                                    <RadioButton text="Web Proxy" editable="true" enabled="false" visible="true" width="489.98846435546875px" valueState="None" selected="false"/>
+                                    <RadioButton text="RFC" editable="true" enabled="false" visible="true" width="489.98846435546875px" valueState="None" selected="false"/>
+                                </buttons>
+                            </RadioButtonGroup>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="Next" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                    <Button text="View" type="Default" iconFirst="true" width="auto" enabled="false" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                </contentRight>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

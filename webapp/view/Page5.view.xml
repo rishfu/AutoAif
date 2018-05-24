@@ -1,0 +1,107 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.autoAifApp.controller.Page5" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="true" title="AUTO AIF - APP" showFooter="true" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="211px">
+                        <layout:control>
+                            <Table width="100%" noDataText="No data" mode="MultiSelect" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar/>
+                                <columns>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Message Type" width="101.51620483398438px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Basic Type" width="80.50926208496094px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Namespace" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Interface" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Version" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="CREMAS" text="" titleActive="false" visible="true"/>
+                                            <Text text="CREMAS06" width="84.51000000px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZCTC" width="84.51000000px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZCUSTOMER" width="89.47917175292969px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="001" width="84.51000000px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="DEBMAS" text="" titleActive="false" visible="true"/>
+                                            <Text text="DEBMAS07" width="84.9884262084961px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZPTP" width="84.9884262084961px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZVENDOR" width="84.9884262084961px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="001" width="84.9884262084961px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="COSMAS" text="" titleActive="false" visible="true"/>
+                                            <Text text="COSMAS01" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZPTP" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="ZMATERIAL" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                            <Text text="001" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="25px" top="148px">
+                        <layout:control>
+                            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="auto"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="1140px" top="148px">
+                        <layout:control>
+                            <Button text="" type="Unstyled" icon="sap-icon://history" iconFirst="true" width="76.9907455444336px" enabled="true" visible="true" iconDensityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="FINISH" type="Unstyled" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentRight>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
